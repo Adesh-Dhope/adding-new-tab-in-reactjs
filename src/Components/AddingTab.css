@@ -1,0 +1,170 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+  }
+  
+  .tabs-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tabs-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+  
+  .tab-button {
+    padding: 0.5rem 1rem;
+    background: #e0e0e0;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .tab-button.active {
+    background: #007bff;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .add-tab-button {
+    padding: 0.5rem 1rem;
+    background: #28a745;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-tab-button:hover {
+    background: #218838;
+  }
+  
+  .tabs-content {
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .add-tab-form {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #f1f1f1;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+  }
+  
+  .add-tab-form h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .add-tab-form input,
+  .add-tab-form textarea {
+    width: calc(100% - 1rem);
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .add-tab-form button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .add-tab-form button:first-child {
+    background: #007bff;
+    color: #fff;
+    margin-right: 0.5rem;
+  }
+  
+  .add-tab-form button:first-child:hover {
+    background: #0056b3;
+  }
+  
+  .add-tab-form button:last-child {
+    background: #dc3545;
+    color: #fff;
+  }
+  
+  .add-tab-form button:last-child:hover {
+    background: #c82333;
+  }
+
+  .add-btn{
+    margin-right: 1em;
+   
+  }
+  .add-btn:hover{
+    border: 1px solid black;
+    background: wheat;
+    border-radius: 4px;
+    
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .tabs-container {
+      padding: 0.5rem;
+    }
+  
+    .tab-button,
+    .add-tab-button {
+      font-size: 0.9rem;
+      padding: 0.4rem 0.8rem;
+    }
+  
+    .tabs-content {
+      font-size: 0.9rem;
+    }
+  
+    .add-tab-form input,
+    .add-tab-form textarea {
+      font-size: 0.9rem;
+      padding: 0.4rem;
+    }
+  
+    .add-tab-form button {
+      font-size: 0.9rem;
+      padding: 0.4rem 0.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+
+.tabs-container{
+    margin: 8px;
+}
+    .tabs-header {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .tab-button,
+    .add-tab-button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
